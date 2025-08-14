@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Project ASHA — CARE Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .tilt {
+      transform-style: preserve-3d;
+      transition: transform 0.45s cubic-bezier(.2,.9,.3,1), box-shadow 0.45s;
+    }
+    .tilt:hover { transform: translateY(-8px) rotateX(4deg) rotateY(-4deg); box-shadow: 0 18px 40px rgba(2,6,23,0.12); }
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+    .wave { height: 80px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2338b6ff" fill-opacity="1" d="M0,192L30,186.7C60,181,120,171,180,165.3C240,160,300,160,360,149.3C420,139,480,117,540,96C600,75,660,53,720,48C780,43,840,53,900,69.3C960,85,1020,107,1080,117.3C1140,128,1200,128,1260,112C1320,96,1380,64,1410,48L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>') center/cover no-repeat; }
+    .focus-outline:focus { outline: 3px solid rgba(56,182,255,0.35); outline-offset: 3px; }
+    @media (min-width: 1280px) { .xl-tiles { grid-template-columns: repeat(3, 1fr); } }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white via-slate-50 to-white text-slate-800 antialiased">
+
+<div class="max-w-6xl mx-auto p-6 lg:p-12">
+
+  <header class="flex flex-col lg:flex-row items-start gap-6 mb-10">
+    <div class="flex-1">
+      <div class="inline-flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 rounded-full bg-[#38b6ff] flex items-center justify-center text-white font-bold">CF</div>
+        <div>
+          <h1 class="text-2xl lg:text-3xl font-extrabold leading-tight">Project ASHA</h1>
+          <p class="text-sm text-slate-500">A Noble Initiative by CARE Foundation — in memory of Mrs. Asha Anil Bhatkal</p>
+        </div>
+      </div>
+      <p class="prose max-w-none text-slate-700">Project ASHA is a heartfelt tribute to the late Mrs. Asha Anil Bhatkal, a dedicated social worker known for her compassion and long-standing service to uplift communities. The initiative focuses on three main pillars to create sustainable, long-term impact.</p>
+      <div class="mt-6 flex gap-3 flex-wrap">
+        <a class="px-4 py-2 rounded-lg glass tilt focus-outline" href="#pillars">Explore Pillars</a>
+        <a class="px-4 py-2 rounded-lg bg-[#38b6ff] text-white hover:brightness-95 transition" href="#contact">Get Involved</a>
+      </div>
+    </div>
+
+    <div class="w-full lg:w-96">
+      <div class="rounded-2xl overflow-hidden tilt shadow-lg">
+        <img src="image1.jpg" alt="Project Asha main image" class="w-full h-56 object-cover">
+        <div class="p-4 bg-white">
+          <h3 class="font-semibold">Honouring a legacy</h3>
+          <p class="text-sm text-slate-500">Carrying forward Mrs. Asha Bhatkal’s vision — education, health, and upliftment.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wave rounded-b-xl mb-8 -mx-6"></div>
+
+  <section id="pillars" class="mb-12">
+    <h2 class="text-xl font-bold mb-4">Three Vital Pillars</h2>
+    <div class="grid gap-6 xl-tiles grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+      <article class="tilt p-6 rounded-2xl bg-white shadow-sm focus-outline" tabindex="0" aria-labelledby="pill-1">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 rounded-lg bg-gradient-to-tr from-[#38b6ff] to-[#6fd1ff] flex items-center justify-center text-white text-lg font-bold">E</div>
+          <div>
+            <h3 id="pill-1" class="text-lg font-semibold">Educational Scholarship</h3>
+            <p class="text-sm text-slate-500">Supporting underprivileged students to achieve their academic goals.</p>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600">We provide financial aid, school supplies and mentorship to encourage continued education and reduce dropout rates. Scholarship recipients are connected with local mentors and monitored for progress.</p>
+        <div class="mt-4 flex gap-3">
+          <button class="px-3 py-1 rounded-md text-sm border border-slate-200">Learn more</button>
+          <button class="px-3 py-1 rounded-md text-sm bg-[#38b6ff] text-white">Nominate a student</button>
+        </div>
+      </article>
+
+      <article class="tilt p-6 rounded-2xl bg-white shadow-sm focus-outline" tabindex="0" aria-labelledby="pill-2">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 rounded-lg bg-gradient-to-tr from-[#ff8a65] to-[#ffb085] flex items-center justify-center text-white text-lg font-bold">M</div>
+          <div>
+            <h3 id="pill-2" class="text-lg font-semibold">Medical Subsidy</h3>
+            <p class="text-sm text-slate-500">Making healthcare accessible by easing medical expenses.</p>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600">We offer support for medical treatments, health camps and subsidies for families in need. Partnerships with local clinics help streamline care and lower costs for urgent healthcare needs.</p>
+        <div class="mt-4 flex gap-3">
+          <button class="px-3 py-1 rounded-md text-sm border border-slate-200">Health camps</button>
+          <button class="px-3 py-1 rounded-md text-sm bg-[#ff8a65] text-white">Request support</button>
+        </div>
+      </article>
+
+      <article class="tilt p-6 rounded-2xl bg-white shadow-sm focus-outline" tabindex="0" aria-labelledby="pill-3">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 rounded-lg bg-gradient-to-tr from-[#8bc34a] to-[#c8e6a5] flex items-center justify-center text-white text-lg font-bold">MF</div>
+          <div>
+            <h3 id="pill-3" class="text-lg font-semibold">Micro Finance</h3>
+            <p class="text-sm text-slate-500">Financial assistance for small businesses and entrepreneurship.</p>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600">Micro loans and financial guidance help small enterprises—particularly women-led groups—gain traction and become self-sufficient. We combine training with seed funding for higher success rates.</p>
+        <div class="mt-4 flex gap-3">
+          <button class="px-3 py-1 rounded-md text-sm border border-slate-200">Apply for loan</button>
+          <button class="px-3 py-1 rounded-md text-sm bg-[#8bc34a] text-white">Partner with us</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-xl font-bold mb-4">Empowering Women</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-2xl overflow-hidden tilt shadow-lg bg-white">
+        <img src="image2.jpg" alt="Women training image" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold">Vocational training & courses</h3>
+          <p class="text-sm text-slate-600 mt-2">Project ASHA provides employment-oriented courses, vocational training, and partner-led workshops to help women gain marketable skills and steady incomes.</p>
+          <div class="mt-4 flex gap-3">
+            <button class="px-3 py-1 rounded-md text-sm border border-slate-200">View programs</button>
+            <button class="px-3 py-1 rounded-md text-sm bg-[#38b6ff] text-white">Refer a candidate</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl glass tilt shadow-sm">
+        <h3 class="font-semibold">Collaborations & Partners</h3>
+        <p class="text-sm text-slate-600 mt-2">Through partnerships with local NGOs and training centers, CARE Foundation scales Project ASHA’s impact and reaches more communities.</p>
+        <ul class="mt-4 space-y-2 text-sm text-slate-600">
+          <li>• Training partners for skill development</li>
+          <li>• Local clinics & health camps</li>
+          <li>• Community leaders & mentors</li>
+        </ul>
+        <div class="mt-4 flex gap-3">
+          <button class="px-3 py-1 rounded-md text-sm border border-slate-200">Our partners</button>
+          <button class="px-3 py-1 rounded-md text-sm bg-[#38b6ff] text-white">Become partner</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-12">
+    <div class="rounded-2xl p-6 bg-white shadow-sm tilt">
+      <div class="flex items-start gap-6">
+        <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+          <img src="image3.jpg" alt="In memory image" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">A Living Tribute</h3>
+          <p class="text-sm text-slate-600 mt-2">Project ASHA carries forward Mrs. Asha Bhatkal’s mission: to uplift, empower, and support individuals, ensuring everyone has the chance at a dignified and fulfilling life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
